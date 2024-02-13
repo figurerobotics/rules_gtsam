@@ -23,7 +23,7 @@ def gtsam_repositories():
         http_archive,
         name = "gtsam",
         build_file = "@rules_gtsam//third_party:gtsam.BUILD",
-        sha256 = "c7b5e6cdad52b141c272778f47baf628975457be3e26ed96a7bc2ae685a00af0",
-        strip_prefix = "gtsam-4.1.1",
-        urls = ["https://github.com/borglab/gtsam/archive/4.1.1.tar.gz"],
+        sha256 = "8b44d6b98a3b608664d1c9a7c1383a406550499d894533bb0183e6cf487e6457",
+        strip_prefix = "gtsam-4.2.0",
+        urls = ["https://github.com/borglab/gtsam/archive/4.2.0.tar.gz"],
     )
