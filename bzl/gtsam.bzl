@@ -51,6 +51,7 @@ def _gen_gtsam_config_impl(ctx):
             ("GTSAM_TANGENT_PREINTEGRATION", True),
             ("GTSAM_USE_SYSTEM_METIS", False),
             ("GTSAM_SLOW_BUT_CORRECT_BETWEENFACTOR", False),
+	    ("GTSAM_ALLOW_DEPRECATED_SINCE_V42", True),
         ),
     )
     ctx.actions.expand_template(
