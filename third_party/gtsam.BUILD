@@ -57,6 +57,7 @@ cc_library(
             "gtsam/basis/*.h",
             "gtsam/discrete/*.h",
             "gtsam/geometry/*.h",
+	    "gtsam/hyrbid/*.h",
             "gtsam/inference/**/*.h",
             "gtsam/linear/**/*.h",
             "gtsam/navigation/*.h",
@@ -94,6 +95,12 @@ cc_library(
         "@boost//:type_traits",
         "@boost//:utility",
         "@eigen",
+    ],
+    copts = [
+      "-Wno-unused-but-set-variable",
+      "-Wno-unused-parameter",
+      "-Wno-deprecated-copy-with-user-provided-copy",
+      "-Wno-#warnings",
     ],
 )
 
