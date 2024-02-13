@@ -94,7 +94,7 @@ cc_library(
         "@boost//:tuple",
         "@boost//:type_traits",
         "@boost//:utility",
-        "@eigen",
+        "@eigen3",
     ],
     copts = [
       "-Wno-unused-but-set-variable",
